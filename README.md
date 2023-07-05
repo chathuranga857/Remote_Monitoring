@@ -1,1 +1,4 @@
 # Remote_Monitoring
+
+The SCADA system project is an event-driven architecture designed to remotely monitor the status of industrial robots. It comprises a middleware, a Python Flask web app hosted in Azure cloud, a relational database, and a simple web UI. The middleware captures status updates from robots through HTTP POST requests using Flask library tools and publishes them to an MQTT broker using the Paho MQTT library. The Python web app, hosted in Azure cloud, subscribes to events from the MQTT broker. Based on these events, the app updates the database. Additionally, the app provides API endpoints for UIs to retrieve the required information.
+This is a project done under Industrial Informatics course as a group work. Middleware, could web app including relational database upto API endpoints were done by myselft, while the Web UI was done by the other group member.
